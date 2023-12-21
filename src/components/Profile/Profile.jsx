@@ -1,4 +1,4 @@
-import css from "./Profile.moduls.css"
+// import css from "./Profile.moduls.css"
 export default function Profile ({username,tag,location,avatar,stats}){
    return(
     <div className="profile">

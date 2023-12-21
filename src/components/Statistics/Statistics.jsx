@@ -1,4 +1,4 @@
-import css from "./Statistics.moduls.css"
+// import css from "./Statistics.moduls.css"
 export default function Statistics({ title, stats }) {
   return (
     <section className="statistics">

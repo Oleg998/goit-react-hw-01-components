@@ -1,32 +1,40 @@
-// import css from "./Profile.moduls.css"
+import {
+  Conteiter,
+  Titel,
+  Distription,
+  SpatItem,
+  SpatTitel,
+} from './Profile.styled';
+
+
 export default function Profile ({username,tag,location,avatar,stats}){
    return(
-    <div className="profile">
+    <Conteiter>
   <div className="description">
     <img
       src={avatar}
       alt="User avatar"
-      className="avatar"
+
     />
-    <p className="name">{username}</p>
-    <p className="tag">@{tag}</p>
-    <p className="location">{location}</p>
+    <Titel>{username}</Titel>
+    <Distription>@{tag}</Distription>
+    <Distription>{location}</Distription>
   </div>
 
   <ul className="stats">
     <li>
-      <span className="label">Followers</span>
-      <span className="quantity">{stats.followers}</span>
+      <SpatTitel>Followers</SpatTitel>
+      <SpatItem>{stats.followers}</SpatItem>
     </li>
     <li>
-      <span className="label">Views</span>
-      <span className="quantity">{stats.views}</span>
+      <SpatTitel>Views</SpatTitel>
+      <SpatItem>{stats.views}</SpatItem>
     </li>
     <li>
-      <span className="label">Likes</span>
-      <span className="quantity">{stats.likes}</span>
+      <SpatTitel>Likes</SpatTitel>
+      <SpatItem>{stats.likes}</SpatItem>
     </li>
   </ul>
-</div>)
+</Conteiter>)
 }
   

@@ -1,16 +1,16 @@
-// import css from "./Statistics.moduls.css"
+ import { Conteiner, ListItem } from './Statistics.styled';
 export default function Statistics({ title, stats }) {
   return (
-    <section className="statistics">
-      {title && <h2 className="title" >{title}</h2>}
+    <Conteiner>
+      {title && <h2 >{title}</h2>}
       <ul className="stat-list">
         {stats.map(({id,label,percentage}) => (
-          <li className="item" key={id}>
+          <ListItem key={id}>
             <span className="label">{label}</span>
             <span className="percentage"> {percentage}%</span>
-          </li>
+          </ListItem>
         ))}
       </ul>
-    </section>
+    </Conteiner>
   );
 }

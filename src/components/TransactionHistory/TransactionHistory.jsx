@@ -1,8 +1,8 @@
-// import css from "./TransactionHistory.modules.css"
+import { Table } from './TransactionHistory.styled';
 
 export default function TransactionHistory({items}) {
   return (
-    <table className="transaction-history">
+    <Table>
       <thead>
         <tr>
           <th>Type</th>
@@ -19,6 +19,6 @@ export default function TransactionHistory({items}) {
           </tr>
         ))}
       </tbody>
-    </table>
+    </Table>
   );
 }
